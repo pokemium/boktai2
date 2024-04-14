@@ -79,3 +79,5 @@ s32 Arithmetic(u32 opcode, s32 a, s32 b) {
     }
   }
 }
+
+NAKED void *FUN_08232600(u8 *code) { INCCODE("asm/todo/FUN_08232600.inc"); }
