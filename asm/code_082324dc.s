@@ -4,30 +4,6 @@
 	
 	.text
 
-	thumb_func_start FUN_082326a0
-FUN_082326a0: @ 0x082326A0
-	push {r4, r5, lr}
-	ldr r5, _082326CC @ =0x00000E24
-	adds r0, r5, #0
-	bl AllocateEntity
-	adds r4, r0, #0
-	adds r1, r5, #0
-	bl FUN_082309cc
-	ldr r0, _082326D0 @ =0x000056C2
-	adds r1, r4, #0
-	movs r2, #1
-	bl FUN_08230e30
-	ldr r0, _082326D4 @ =0x030046A4
-	str r4, [r0]
-	bl FUN_082326d8
-	pop {r4, r5}
-	pop {r0}
-	bx r0
-	.align 2, 0
-_082326CC: .4byte 0x00000E24
-_082326D0: .4byte 0x000056C2
-_082326D4: .4byte 0x030046A4
-
 	thumb_func_start FUN_082326d8
 FUN_082326d8: @ 0x082326D8
 	push {r4, r5, lr}
